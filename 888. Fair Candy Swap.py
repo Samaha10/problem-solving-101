@@ -6,7 +6,7 @@ class Solution:
         alice_vals = set(aliceSizes)
         
         for size in set(bobSizes):
-            target = (sum_alice - sum_bob) / 2 + (size)
+            target = (sum_alice - sum_bob) / 2 + size
             if target in alice_vals:
                 return [target, size]
 
