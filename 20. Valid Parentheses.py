@@ -1,11 +1,5 @@
 class Solution:
-    def isValid(self, s: str) -> bool:
-        # case ((( or )))
-        # putting one single if instead of 2 saved memory
-        #if(all([brac in ['{', '(', '['] for brac in s]) or all([brac in ['}', ')', ']'] for brac in s])):
-            #return False
-        
-        
+    def isValid(self, s: str) -> bool:        
         opening = []
         
         for brac in s:
@@ -13,7 +7,6 @@ class Solution:
                 opening.append(brac)
             
             else:
-                # case more close brac than open[]]]], ()}
                 if not opening:
                     return False
                 
@@ -37,7 +30,6 @@ class Solution:
                     else:
                         return False
         
-        # case ([]){ , check if open brac list is empty
         if not opening:
             return True
         
