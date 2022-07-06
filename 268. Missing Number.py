@@ -10,5 +10,5 @@ class Solution:
             if elem == -1:
                 return i
         
-        
+        # complete sequence then last + 1
         return len(passed)
