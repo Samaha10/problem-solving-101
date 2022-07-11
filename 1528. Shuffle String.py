@@ -5,7 +5,5 @@ class Solution:
         for i in range(len(s)):
             t = t[ :indices[i]] + s[i] + t[indices[i]+1: ]
             
-                
-        
         return t
     
