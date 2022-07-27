@@ -20,7 +20,5 @@ class Solution:
             else:
                 total += len(word)
             
-
-            
-        
+    
         return total
